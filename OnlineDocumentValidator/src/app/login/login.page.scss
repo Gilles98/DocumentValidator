@@ -1,0 +1,47 @@
+.formsDesign{
+  background: var(--ion-color-logincolor);
+  border: 2px solid gray;
+  margin: 1em 10%;
+  padding: 2em;
+  border-radius: 15%;
+  height: 100%;
+  box-shadow: 0em 0em 1em gray;
+}
+
+@media  screen and (min-width:800px){
+  .formsDesign{
+    margin: 1em 30%
+  }
+}
+
+@keyframes animate {
+  0% {
+    box-shadow: 7px 7px skyblue,7px 5px 9px lightseagreen, 7px 5px 11px rgba(255,255,255,0.7) ;
+  }
+  25% {
+    box-shadow: 7px 7px skyblue,7px 5px 20px lightseagreen, 7px 5px 25px rgba(255,255,255,0.9) ;
+  }
+  50% {
+    box-shadow: 7px 7px skyblue,7px 5px 28px lightseagreen, 7px 5px 31px rgba(255,255,255,1) ;
+  }
+  75% {
+    box-shadow: 7px 7px skyblue,7px 5px 20px lightseagreen, 7px 5px 25px rgba(255,255,255,0.9) ;
+  }
+  100% {
+    box-shadow: 7px 7px skyblue,7px 5px 9px lightseagreen, 7px 5px 11px rgba(255,255,255,0.7) ;
+  }
+}
+
+.image-center{
+  text-align: center;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 1em;
+  animation: animate 5s infinite;
+  margin-bottom: 2em;
+  width: 40%;
+  height: 40%;
+}
+
+

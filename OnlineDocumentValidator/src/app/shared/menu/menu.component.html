@@ -1,0 +1,16 @@
+<ion-menu side="start" menuId="first" contentId="main">
+  <ion-header>
+    <ion-toolbar color="robonextblue">
+      <ion-title>Kies een optie</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content >
+      <ion-item *ngIf="checkRole() ==='Super-Admin' " routerLink="/master" routerLinkActive="active" >Bedrijf manipuleren(Super-Admin)</ion-item>
+      <ion-item *ngIf="checkRole() === 'Admin'  || checkRole() === 'Super-Admin'">Werknemers beheren</ion-item>
+    <ion-item class="mouseOver" lines="none"><span *ngIf="checkRole() !== null" (click)="logout()">Logout</span><span *ngIf="checkRole() === null">Login</span> </ion-item>
+
+    <ion-fab vertical="bottom">
+      <ion-item lines="none" ><span class="roboText">Powered By Robonext</span></ion-item>
+    </ion-fab>
+  </ion-content>
+</ion-menu>

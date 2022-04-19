@@ -1,0 +1,77 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+
+:root {
+  --ion-color-robonextblue: #151999;
+  --ion-color-robonextblue-rgb: 21,25,153;
+  --ion-color-robonextblue-contrast: #ffffff;
+  --ion-color-robonextblue-contrast-rgb: 255,255,255;
+  --ion-color-robonextblue-shade: #121687;
+  --ion-color-robonextblue-tint: #2c30a3;
+
+  --ion-color-robogray: #ebf0f5;
+  --ion-color-robogray-rgb: 235,240,245;
+  --ion-color-robogray-contrast: #000000;
+  --ion-color-robogray-contrast-rgb: 0,0,0;
+  --ion-color-robogray-shade: #cfd3d8;
+  --ion-color-robogray-tint: #edf2f6;
+
+  --ion-color-logincolor: #214761;
+  --ion-color-logincolor-rgb: 33,71,97;
+  --ion-color-logincolor-contrast: #ffffff;
+  --ion-color-logincolor-contrast-rgb: 255,255,255;
+  --ion-color-logincolor-shade: #1d3e55;
+  --ion-color-logincolor-tint: #375971;
+}
+
+.ion-color-robonextblue {
+  --ion-color-base: var(--ion-color-robonextblue);
+  --ion-color-base-rgb: var(--ion-color-robonextblue-rgb);
+  --ion-color-contrast: var(--ion-color-robonextblue-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-robonextblue-contrast-rgb);
+  --ion-color-shade: var(--ion-color-robonextblue-shade);
+  --ion-color-tint: var(--ion-color-robonextblue-tint);
+}
+
+.ion-color-robogray {
+  --ion-color-base: var(--ion-color-robogray);
+  --ion-color-base-rgb: var(--ion-color-robogray-rgb);
+  --ion-color-contrast: var(--ion-color-robogray-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-robogray-contrast-rgb);
+  --ion-color-shade: var(--ion-color-robogray-shade);
+  --ion-color-tint: var(--ion-color-robogray-tint);
+}
+
+.ion-color-logincolor {
+  --ion-color-base: var(--ion-color-logincolor);
+  --ion-color-base-rgb: var(--ion-color-logincolor-rgb);
+  --ion-color-contrast: var(--ion-color-logincolor-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-logincolor-contrast-rgb);
+  --ion-color-shade: var(--ion-color-logincolor-shade);
+  --ion-color-tint: var(--ion-color-logincolor-tint);
+}

@@ -1,0 +1,14 @@
+ion-content,ion-item,ion-list{
+  --background: var(--ion-color-robogray)!important;
+}
+.mouseOver{
+  cursor: pointer;
+}
+.roboText{
+  color: transparent;
+  font-size: larger;
+  background: linear-gradient(90deg, var(--ion-color-robonextblue),var(--ion-color-robonextblue), darkgoldenrod,goldenrod, darkgoldenrod,var(--ion-color-robonextblue), var(--ion-color-robonextblue));
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+}

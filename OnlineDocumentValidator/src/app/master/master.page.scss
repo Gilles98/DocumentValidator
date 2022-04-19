@@ -1,0 +1,35 @@
+.design{
+  background: var(--ion-color-logincolor);
+  width:75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@keyframes animate {
+  0% {
+    font-size: 2em;
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  25% {
+    font-size: 2.5em;
+    -webkit-transform: rotate3d(0, 0, 1, 90deg);
+    transform: rotate3d(0, 0, 1, 90deg);
+  }
+  50% {
+    font-size: 3em;
+    -webkit-transform: rotate3d(0, 0, 1, 180deg);
+    transform: rotate3d(0, 0, 1, 180deg);
+  }
+  75% {
+    font-size: 2.5em;
+    -webkit-transform: rotate3d(0, 0, 1, 270deg);
+    transform: rotate3d(0, 0, 1, 270deg);
+  }
+  100% {
+    font-size: 2em;
+    -webkit-transform: rotate3d(0, 0, 1, 360deg);
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}

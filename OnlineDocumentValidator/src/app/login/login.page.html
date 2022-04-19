@@ -1,0 +1,49 @@
+<ion-header [translucent]="true" xmlns="http://www.w3.org/1999/html">
+  <ion-toolbar color="robonextblue">
+    <ion-menu-toggle slot="start"> <ion-menu-button></ion-menu-button></ion-menu-toggle>
+    <ion-title size="large">Online Document Validator</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="robogray">
+  <ion-header collapse="condense">
+    <ion-toolbar color="robonextblue">
+      <ion-menu-toggle slot="start"> <ion-menu-button></ion-menu-button></ion-menu-toggle>
+      <ion-title size="large">Online Document Validator</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-grid class="ion-text-center">
+
+    <ion-row>
+      <ion-col class="ion-align-self-center">
+
+  <form class="formsDesign">
+    <h2 slot="start" style="color: white">Login<br>	&#8595;</h2>
+    <ion-avatar class="image-center">
+      <img alt="standard"  src="assets/pictureLogin.png" />
+    </ion-avatar>
+    <ion-item lines="full" color="logincolor" class="ion-text-center" >
+
+
+      <ion-label position="floating"><ion-icon name="mail-outline"></ion-icon> Vul je mail in</ion-label>
+      <ion-input [(ngModel)]="email" name="inloggenMail" type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full" color="logincolor" class="ion-text-center">
+      <ion-label position="floating"> <ion-icon name="bag-outline"></ion-icon> Vul je wachtwoord in</ion-label>
+      <ion-input  [(ngModel)]="password" name="inloggenWachtwoord"
+                  type="password" required></ion-input>
+    </ion-item>
+
+
+    <ion-row style="background: transparent">
+      <ion-col>
+        <ion-button style="margin: 2em"  type="submit" color="danger"(click)="login()" mode="sm" expand="block">Log in</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+      </ion-col></ion-row>
+    </ion-grid>
+
+</ion-content>

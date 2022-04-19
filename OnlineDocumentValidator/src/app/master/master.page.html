@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="robonextblue">
+    <ion-menu-toggle slot="start"> <ion-menu-button></ion-menu-button></ion-menu-toggle>
+    <ion-title>
+      Online Document Validator
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="robogray">
+  <ion-header collapse="condense">
+    <ion-toolbar color="robonextblue">
+      <ion-menu-toggle slot="start"> <ion-menu-button></ion-menu-button></ion-menu-toggle>
+      <ion-title size="large">Online Document Validator</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+    <ion-card *ngFor="let user of allUsers | async"  class="design">
+      <ion-card-header>
+        <ion-item color="logincolor" lines="full">
+          <ion-card-title color="light">{{user.bedrijfsnaam}}</ion-card-title>
+          <ion-icon slot="end" color="primary" name="pencil-outline"></ion-icon>
+        </ion-item>
+      </ion-card-header>
+      <ion-card-content >
+        <ion-label color="primary"><h2>Werknemers </h2></ion-label>
+        <ion-list>
+          <div  *ngFor="let emp of allEmployees | async">
+            <ion-item *ngIf="emp.bedrijfId === user.id">
+              <ion-label>{{emp.naam}} {{emp.bedrijfId}}</ion-label>
+              <ion-button slot="end" (click)="activateEdit(emp)">edit</ion-button>
+            </ion-item>
+        </div>
+        </ion-list>
+      </ion-card-content>
+      <ion-card-header>
+       <ion-label color="primary"><h3>Werknemer toevoegen?</h3></ion-label>
+        <ion-item color="logincolor">
+          <ion-icon  slot="end" size="large" color="success" name="checkmark-outline"></ion-icon>
+            <ion-input type="text" placeholder="Hele naam"></ion-input>
+          <ion-input type="text" placeholder="Email"></ion-input>
+          <ion-input type="text" placeholder="Wachtwoord" ></ion-input>
+        </ion-item>
+      </ion-card-header>
+    </ion-card>
+
+  <ion-fab vertical="bottom" slot="fixed"  horizontal="end">
+    <ion-fab-button><ion-icon name="add" style="animation: animate 5s infinite" ></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+
+</ion-content>
